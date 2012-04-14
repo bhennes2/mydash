@@ -13,3 +13,14 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+
+/.sass-cache/
+/doc/api
+/doc/app
+/*.swp
+/*-
+/.DS_Store
+
+# Ignore RubyMine config
+/.idea
