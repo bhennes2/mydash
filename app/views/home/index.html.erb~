@@ -1,0 +1,62 @@
+<h1>
+	<img src="/assets/dial.png" style="max-width: 300px;" />
+	myDash
+</h1>
+<div id="filmstrip" style="width: 150px; float: left; margin-right: 50px; height: 800px; overflow-y: scroll;">
+	<img class="icon" src="https://encrypted-tbn3.google.com/images?q=tbn:ANd9GcSFmojDLTZOUqmw-mvuAagRpdzD4PsS1crc7TU1ovYGp_hVpxIl" style="max-width: 100px;" />
+	<img class="icon" src="https://encrypted-tbn1.google.com/images?q=tbn:ANd9GcRcBvmdO6m0U9dWNmmqMJM47TmvwF2jLWs3Q1udHuzF7Cy7YgV1" style="max-width: 100px;" />
+	<img class="icon" src="https://encrypted-tbn3.google.com/images?q=tbn:ANd9GcQTQFhDHJXKRdotHEGeG7t7TOX0AAUpHYCKIyEw_JwMTU0UXcrB" style="max-width: 100px;" />
+	<img class="icon" src="https://encrypted-tbn1.google.com/images?q=tbn:ANd9GcRMUWP3-x84vBjtRelMh65J6gbWQI8Vfw9KZHETK0zG21DullQi" style="max-width: 100px;" />
+	<img class="icon" src="https://encrypted-tbn1.google.com/images?q=tbn:ANd9GcRkCsSqpnkVbqO8dkEZci8NpKEmhw1MUkI-rMW1Ors1EziBaxAfVg" style="max-width: 100px;" />
+	<img class="icon"src="https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcSN9UXNxphq05fXd_Zzs9oPu7IyiyyvtxPf_4MZYY5l9ppuma8b" style="max-width: 100px;" />
+	<img class="icon" src="https://encrypted-tbn2.google.com/images?q=tbn:ANd9GcQMW5nvZSLmyYSNi1A4A-e3yXBkyXiNiL6ch9BdB-SDeeR2lNnWDg" style="max-width: 100px;" />
+	<img class="icon" src="https://encrypted-tbn0.google.com/images?q=tbn:ANd9GcQ-ZO-VLqx038e5NKtGb5rLSnQpi8oBeVGUN69nv4UPWlnwcdUnLQ" style="max-width: 100px;" />
+	<img class="icon" src="https://encrypted-tbn1.google.com/images?q=tbn:ANd9GcRlI0f-y3bgy0CwmK5KNgoxRr94kBJ0kyC03Nvec0dhvJ-nImbj" style="max-width: 100px;" />
+	<img class="icon" src="https://encrypted-tbn3.google.com/images?q=tbn:ANd9GcQc9TaMnZjBDfyDiJN-EYAiOCodnA-H4zjdRPgchagpw7JdS0lx" style="max-width: 100px;" />
+	<img class="icon" src="https://encrypted-tbn2.google.com/images?q=tbn:ANd9GcSi2sbsjw0o4vJas92qgrLfwCC2Luq0IpFyZA_Fmj8A2XcqMobLXw" style="max-width: 100px;" />
+	<img class="icon" src="https://encrypted-tbn2.google.com/images?q=tbn:ANd9GcS7Hf9IkLXH5sXUtNxsxI63Gdwy1mJmbTBGNN3NaVBQWbAZvVCz" style="max-width: 100px;" />
+	<img class="icon" src="https://encrypted-tbn1.google.com/images?q=tbn:ANd9GcRMnFwL793vNQv5InvkqxieUHosWCdqdNdf4ykWCbqS-BwhhlrgIw" style="max-width: 100px;" />
+</div><!-- filmstrip -->
+<div class="widget" id="twitter">
+	<img src="http://www.agencytool.com/blog/wp-content/uploads/2009/05/twitter_krisnyreen.jpg" style="max-width: 400px;" />
+</div><!-- widget -->
+<div class="widget">
+	<img src="https://encrypted-tbn3.google.com/images?q=tbn:ANd9GcRJa_yIm0avKBgvTSn_qNu9XFAOq3iMtwAxeYRH9QI0Mqo9pwvjsw" style="max-width: 400px;" />
+</div><!-- widget -->
+<div class="widget">
+	<img src="http://sarabenincasa.files.wordpress.com/2010/05/sarab_cnn_may7_20101.jpg" style="max-width: 400px;" />
+</div><!-- widget -->
+<div class="widget">
+
+</div><!-- widget -->
+<div class="widget">
+
+</div><!-- widget -->
+<div class="widget">
+
+</div><!-- widget -->
+<style>
+	.widget {
+		height: 400px;
+		width: 400px;
+		border: 1px solid black;
+		float: left;
+	}
+</style>
+
+<script>
+	$(".icon").click(function(){
+		$(".widget").slideUp();
+		$("#twitter").slideDown().html('<img src="/assets/twitter.png" />');
+		$("#twitter").css("height", "1200px");
+		$("#twitter").css("width", "1200px");
+		$("#twitter").css("overflow", "hidden");
+	});
+	$(".widget").click(function(){
+		$(".widget").slideUp();
+		$(this).slideDown().html('<img src="/assets/twitter.png" />');
+		$(this).css("height", "1200px");
+		$(this).css("width", "1200px");
+		$(this).css("overflow", "hidden");
+	});
+</script>
